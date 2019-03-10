@@ -5,6 +5,7 @@ Aplicação web para uma loja virtual fictícia;
 
 Projeto com: 
 [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+
 Bootstrap 4 
 
 A aplicação contém:
