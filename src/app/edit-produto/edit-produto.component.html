@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="centralizado">
+      <h2 class="text-center">Editar produto</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Código:</label>
+        <input type="number" formControlName="codigo" placeholder="Informe o código" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.codigo.errors }">
+      </div>
+  
+      <div class="form-group">
+          <label>Nome:</label>
+          <input type="text" formControlName="nome" placeholder="Informe o nome" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nome.errors }">
+        </div>
+  
+        <div class="form-group">
+          <label>Valor (R$):</label>
+          <input type="number" formControlName="valor" placeholder="Valor" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.valor.errors }">
+        </div>
+  
+        <div class="form-group">
+            <label>Quantidade:</label>
+            <input type="number" formControlName="quantidade" placeholder="Informe a quantidade" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.quantidade.errors }">
+        </div>
+  
+        <div class="form-group">
+            <label>Descrição:</label>
+            <input type="text" formControlName="descricao" placeholder="Informe a descrição" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.descricao.errors }">
+        </div>
+        <button type="button" class="btn btn-secondary"  style="margin-left: 190px;" onClick="history.go(-1)">Voltar</button>
+        <button type="submit" class="btn btn-primary" style="margin-left: 34px;">Atualizar</button>
+    </form>
+  </div>
+  </div>
+  

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="centralizado">
+      <h2 class="text-center">Adicionar produto</h2>
+      <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+        <div class="form-group" >
+          <label>Código:</label>
+          <input appCampo type="number " formControlName="codigo" placeholder="Informe o código" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.codigo.errors }">
+        </div>
+    
+        <div class="form-group">
+          <label>Nome:</label>
+          <input appCampo type="text" formControlName="nome" placeholder="Informe o nome" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nome.errors }">
+        </div>
+    
+        <div class="form-group">
+          <label>Valor (R$):</label>
+          <input appCampo type="number" formControlName="valor" placeholder="Valor" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.valor.errors }">
+        </div>
+
+        <div class="form-group">
+            <label>Quantidade:</label>
+            <input appCampo type="number" formControlName="quantidade" placeholder="Informe a quantidade" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.quantidade.errors }">
+        </div>
+
+        <div class="form-group">
+            <label>Descrição:</label>
+            <input appCampo  type="text" formControlName="descricao" placeholder="Informe a descrição" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.descricao.errors }">
+        </div>
+        <button type="button" class="btn btn-secondary"  style="margin-left: 210px;" onClick="history.go(-1)">Voltar</button>
+        <button type="submit" class="btn btn-primary" style="margin-left: 34px;">Salvar</button>
+      </form>    
+    </div>
+  </div>

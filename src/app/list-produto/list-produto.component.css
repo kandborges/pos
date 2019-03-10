@@ -1,0 +1,34 @@
+.container{
+    background-image: url('src\app\img\loja.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 100vh;
+}
+
+@media (min-width: sm) {
+    .container{
+        background-image: url('src\app\img\loja.jpg');
+    }
+}
+
+@media (min-width: md) {
+    .container{
+        background-image: url('src\app\img\loja.jpg');
+    }
+}
+
+@media (min-width: lg) {
+    .container{
+        background-image: url('src\app\img\loja.jpg');
+    }
+}
+
+.table-container{
+    margin-top: 40px;  
+}
+
+.th, td {
+    text-align: left;
+    padding: 10px;
+  }
+
