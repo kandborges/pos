@@ -1,6 +1,5 @@
 # Projeto Pós-Gaduação em Engenharia de Software
 Disciplina: Programação para o Desenvolvimento de Software 2
-Programação para o Desenvolvimento de Software 2
 
 Aplicação web para uma loja virtual fictícia;
 
