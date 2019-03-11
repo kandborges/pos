@@ -20,8 +20,8 @@ https://github.com/ederfranco23/academy-store-api
 
 Todos os campos do formulário são de preenchimento obrigatório;
 
-## Development server
+Execução da aplicação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
-The app will automatically reload if you change any of the source files.
+Estando no diretório do projeto, abra o console e digite npm install e depois npm start.
+Acesse: http://localhost:4200
 
